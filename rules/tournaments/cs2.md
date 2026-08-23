@@ -13,10 +13,9 @@ The rules may be available in several languages. If the individual versions diff
 ### Tournament Platform
 
 The official tournament platform for this tournament is Toornament.com.
-Please make sure that each Team is registered until 2.10.2025 20:00.
+Please make sure that each Team is registered until 2.10.2026 16:00.
 
-All group stage matches will be played on online Swiss servers.
-Playoff matches may be hosted on local servers, depending on the setup.
+All nmatches will be played Locally Hosted Server.
 
 The official tournament page will be shared via the main communication channel established in the main rulebook.
 
@@ -26,11 +25,59 @@ The tournament is played in the following stages:
 
 | Stage     | Type               |   Format   | Description                                                                 |
 |-----------|--------------------|------------|-----------------------------------------------------------------------------|
-| Stage 1   | Swiss Rounds       | Bo1/Bo3    | All Qualifing games and Elimination Games are BO3. The top 8 teams qualify for the Pro Playoffs. The 9th to Last Place Team will have the chance to play in the Fun Playoffs (optional). This Stage will be seeded according to the Seeding Procedure |                                                           
+| Stage 1   | Swiss Rounds       | Bo1/Bo3    | All Qualifing games and Elimination Games are BO3. The top 8 teams qualify for the Pro Playoffs. This Stage will be seeded according to the Seeding Procedure |                                                           
 | Stage 2   | Single Elimination | Bo3        | The bracket will be seeded according to the result of the first stage       |
-| Stage 2.1 | Singel Elimination | BO3        | This is the Stage for those who want to Play Fun Playoffs                   |
 
-The amount of swiss rounds played during the first stage will adapt based on the total amount of teams participating.
+A total of five Swiss rounds will be played. Teams that achieve three wins will advance to the Playoffs, while teams that reach three losses will be eliminated.
+
+### Swiss Bracket
+
+Teams play against opponents of identical W-L record.
+Three wins advance---Three losses eliminate
+All elimination and advancement matches are to be best of three.
+All other matches are to be best of one.
+Teams are not to play the same opponent twice in the same stage, if possible.
+Match-ups shall be determined by seed. The first round follows the Initial Match-ups. In round 2 and 3, the highest seeded team faces the lowest seeded team available that does not result in a rematch within the stage. In other rounds, refer to the following table and select the top-most row that does not result in a rematch:
+
+| Priority |  |  |  |
+|:--------:|--------:|--------:|--------:|
+|1         | 1v6    |2v5    |3v4    |
+|2         | 1v6    |2v4    |3v5    |
+|3         | 1v5    |2v6    |3v4    |
+|4         | 1v5    |2v4    |3v6    |
+|5         | 1v4    |2v6    |3v5    |
+|6         | 1v4    |2v5    |3v6    |
+|7         | 1v6    |2v3    |4v5    |
+|8         | 1v5    |2v3    |4v6    |
+|9         | 1v3    |2v6    |4v5    |
+|10        | 1v3    |2v5    |4v6    |
+|11        | 1v4    |2v3    |5v6    |
+|12        | 1v3    |2v4    |5v6    |
+|13        | 1v2    |3v6    |4v5    |
+|14        | 1v2    |3v5    |4v6    |
+|15        | 1v2    |3v4    |5v6    |
+
+##### Initial Swiss Match-ups
+Match-ups for the first round of the Swiss format are as follows:
+|   Swiss Round 1 |
+|----------:|
+| 1  vs. 9  |
+| 2  vs. 10 |
+| 3  vs. 11 |
+| 4  vs. 12 |
+| 5 vs. 13  |
+| 6 vs. 14  |
+| 7 vs. 15  |
+| 8 vs. 16  |
+
+##### Single Elimination Bracket
+- Bracket A:
+  - 1 vs. 8
+  - 4 vs. 5
+- Bracket B:
+  - 2 vs. 7
+  - 3 vs. 6
+- All matches are best of three
 
 ## Schedule
 
@@ -40,6 +87,38 @@ All players must be at the location at the start of the tournament.
 
 No accommodations will be made for other tournaments that may happen during the time of this tournament. 
 
+<a id="seeding"></a>
+### Seeding
+<a id="Pre-event-Seeding"></a>
+#### Pre-event Seeding
+Coming into the event, all 32 teams are sorted based on their current global standing in the VRS or in case of none VRS Ranking AVG Faceit Elo will be used as Seeding Purpose
+
+#### Stage Seeding
+* Stage 1: 
+	* All teams will use their [pre-event seed](#Pre-event-Seeding).
+
+* Playoffs:
+	* All teams will use their final seed from Stage 3 (see [Mid-stage Seed Calculation](#Mid-stage-Seed-Calculation)).
+
+##### Mid-stage Seed Calculation
+For all Swiss match-ups, after the initial matches, seed is determined (in order) by:
+1. Current W-L record in the stage
+2. [Difficulty Score](#Difficulty-score) in the current stage
+3. Initial seeding of the current stage
+
+##### Difficulty Score (Buchholz)
+Each team's Difficulty Score is tracked for the purpose of tie-breaking. 
+
+The Difficulty Score is the sum of current wins minus the sum of current losses for every opponent a team has faced.
+
+###### Example:
+*Team A's prior opponents are 2-0 and 1-1. Team A's Difficulty Score is 2 (prior opponents have 3 wins total, and 1 loss total, so 3-1 = 2)*
+
+*Team B's prior opponents are both 1-1. Their Difficulty Score is 0 (prior opponents have 2 wins and 2 losses in total, so 2-2 = 0)*
+
+*Therefore, if both Team A and B have the same win-loss record, Team A gets the higher seed because it played against teams that were more difficult to defeat.*
+
+
 ## Game Settings
 
 ### Map pool
@@ -47,9 +126,9 @@ No accommodations will be made for other tournaments that may happen during the 
 * Inferno
 * Mirage
 * Nuke
-* Overpass
+* Cache
 * Dust 2
-* Train
+* Anubis
 * Ancient
 
 ### Map Selection Process
@@ -67,10 +146,19 @@ To choose on which map the match will be played, the ban will be done as follows
 To choose on which map the match will be played, the ban will be done as follows:
 
 * The top team in the tree is considered team A. The other team is by definition team B.
-* Team A starts banned followed byTeam B.
-* Team A chooses one of the five remaining maps, this will be the first map played during the showdown. Team B chooses the side of the first game.
-* Team B chooses one of the four remaining maps, this will be the second map played during the showdown. Team A chooses the side of the second game.
+* Team A starts banned followed by Team B.
+* Team A chooses one of the five remaining maps, this will be the first map played during the Match. Team B chooses the side of the first game.
+* Team B chooses one of the four remaining maps, this will be the second map played during the Match. Team A chooses the side of the second game.
 * Team A starts ban followed by Team B.
+* The remaining map will be played for the tiebreaker. A Knife round will be played to define the side of the teams.
+
+#### Bo5
+* The top team in the tree is considered team A. The other team is by definition team B.
+* Team A starts banned followed by Team B.
+* Team A chooses one of the five remaining maps, this will be the first map played during the Match. Team B chooses the side of the first game.
+* Team B chooses one of the four remaining maps, this will be the second map played during the Match. Team A chooses the side of the second game.
+* Team A chooses one of the tree remaining maps, this will be the third map played during the Match. Team B chooses the side of the third game.
+* Team B chooses one of the two remaining maps, this will be the forth map played during the Match. Team B chooses the side of the forth game.
 * The remaining map will be played for the tiebreaker. A Knife round will be played to define the side of the teams.
 
 ### Match Settings
@@ -84,7 +172,7 @@ To choose on which map the match will be played, the ban will be done as follows
 *	Overtime rounds: Best out of 6 (mp_overtime_maxrounds 6)
 *	Overtime start money: $12,500 (mp_overtime_startmoney 12500)
 *	Round restart delay: 5 seconds (mp_round_restart_delay 5)
-*	Break during half time: 1 minute
+*	Break during half time: 5 minute
 *	Break during half time in overtimes: disabled
 *	Prohibited items: none (mp_items_prohibited "")
 
